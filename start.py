@@ -1,0 +1,1 @@
+# * Run only after 1st cloning to create needed db
