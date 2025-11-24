@@ -3,7 +3,10 @@ from telebot import TeleBot
 from telebot import types
 import sqlite3
 
-bot = TeleBot(token='8240380202:AAF1nCBbnlvPogdRyuE9ylbxbjIvnDAFwvM')
+
+with open('token.txt') as f:
+    token = f.readline().strip()
+bot = TeleBot(token=token)
 
 ACTION = ''
 
